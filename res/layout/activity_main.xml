@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 顶部提示文本 -->
+    <TextView
+        android:id="@+id/tvTopHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:gravity="center"/>
+
+    <!-- FPS显示 -->
+    <TextView
+        android:id="@+id/tvFps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FPS:0"
+        android:layout_marginLeft="10dp"/>
+
+    <!-- 相机预览 -->
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
